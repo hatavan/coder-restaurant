@@ -4,7 +4,7 @@
 
 Submitted by: **Ha Ta**
 
-Time spent: **12** hours spent in total
+Time spent: **16** hours spent in total
 
 URL: **https://hata-coder-restaurant.herokuapp.com**
 
@@ -58,7 +58,7 @@ The following **known issues**:
 
 Here's a walkthrough of implemented user stories:
 
-![Video Walkthrough](walkthrough.gif)
+![Video Walkthrough](Walkthrough.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
