@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  get 'orders/index'
+
+  get 'orders/new'
+
+  post 'orders' => 'orders#create'
+  
   resources :food_items
   get 'menu' => 'home#menu'
 

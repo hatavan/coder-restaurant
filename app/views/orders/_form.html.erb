@@ -1,0 +1,29 @@
+<div class="card">
+  <%= image_tag food_item.image_url_or_default, class: "card-img-top", alt: "#{food_item.name}" %>
+  <div class="card-block">
+    <h5 class="card-title"><%= food_item.name %></h5>
+    <div class="card-text">
+      <%= food_item.description %>
+    </div>
+  </div>
+</div>
+<div class="card">
+  <%= form_tag orders_path, method: 'post', class: 'card-block' do %>
+    <%= hidden_field_tag :food, food_item.id %>
+    <div class="form-group">
+      <%= label_tag 'name' %>
+      <%= text_field_tag 'name', nil, class: 'form-control' %>    
+    </div>
+    <div class="form-group">
+      <%= label_tag 'phone' %>
+      <%= text_field_tag 'phone', nil, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= label_tag 'address' %>
+      <%= text_area_tag 'address', nil, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= submit_tag 'Submit', class: 'btn btn-primary'%>
+    </div> 
+  <% end %>
+</div>

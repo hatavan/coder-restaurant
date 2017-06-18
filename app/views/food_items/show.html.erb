@@ -1,29 +1,20 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @food_item.name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @food_item.description %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @food_item.price %>
-</p>
-
-<p>
-  <strong>Image url:</strong>
-  <%= @food_item.image_url %>
-</p>
-
-<p>
-  <strong>Section:</strong>
-  <%= @food_item.section.name %>
-</p>
-
-<%= link_to 'Edit', edit_food_item_path(@food_item) %> |
-<%= link_to 'Back', food_items_path %>
+<div class="card">
+  <%= image_tag @food_item.image_url_or_default, class: "card-img-top", alt: "#{@food_item.name}" %>
+  <div class="card-block">
+    <h5 class="card-title"><%= @food_item.name %></h5>
+    <div class="card-text">
+      <%= @food_item.description %>
+    </div>
+  </div>
+  <div class="card-footer">
+      <div class="row">
+        <div class="col-md-8"><span class="badge badge-pill badge-danger"><%= @food_item.price %> VND</span> <small class="badge badge-info"><%= @food_item.section.name %></small></div>
+        <div class="col-md-4 text-right">
+        <%= link_to(orders_new_path(food: @food_item.id)) do %>
+          <button class="btn btn-sm btn-primary">Order</button></div>
+        <% end %>
+      </div>
+    </div>
+</div>
+<%= link_to 'Back', menu_path %>

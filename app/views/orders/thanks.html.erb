@@ -1,0 +1,43 @@
+<h1>Thank you for your order page</h1>
+
+<p>
+  <strong>Item name:</strong>
+  <%= @food_item.name %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @food_item.price %>
+</p>
+
+<p>
+  <strong>Delivery:</strong>
+  <%= @delivery %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @total %> VND
+</p>
+
+<p>
+  <strong>User name:</strong>
+  <%= @order[:name] %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @order[:phone] %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @order[:address] %>
+</p>
+
+<p>
+  <strong>Order time:</strong>
+  <%= @order_time %>
+</p>
+
+<%= link_to 'Back', menu_path %>

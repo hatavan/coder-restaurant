@@ -15,12 +15,25 @@
     </div>
   <% end %>
 </div>
-<% @foodItems.each do |food| %>
-  <div class="card">
-    <%= image_tag food.image_url_or_default, class: "card-img-top", alt: "food.name" %>
+<% @food_items.each do |item| %>
+  <div class="card" style="width: 320px">
+    <%= link_to(item) do %>
+      <%= image_tag item.image_url_or_default, class: "card-img-top", alt: "#{item.name}" %>
+    <% end %>
     <div class="card-block">
-      <h4 class="card-title"><%= food.name %> <span class="badge badge-pill badge-danger"><%= food.price %> VND</span></h4>
-      <div class="card-text"><span class="badge badge-info"><%= food.section.name %></span></div>
+      <h5 class="card-title"><%= item.name %></h5>
+    </div>
+    <div class="card-footer">
+      <div class="row">
+        <div class="col-md-8">
+          <span class="badge badge-pill badge-danger"><%= item.price %> VND</span> <small class="badge badge-info"><%= item.section.name %></small>
+        </div>
+        <div class="col-md-4">
+          <%= link_to(orders_new_path(food: item.id)) do %>
+            <button class="btn btn-sm btn-primary">Order</button>
+          <% end %>
+        </div>
+      </div>
     </div>
   </div>
 <% end %>
