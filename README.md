@@ -6,13 +6,13 @@ Submitted by: **Ha Ta**
 
 Time spent: **12** hours spent in total
 
-URL: **heroku-app-url**
+URL: **https://hata-coder-restaurant.herokuapp.com**
 
 ## User Stories
 
 ### Required:
 
-* [ ] User must be able to go two pages: Menu, and Contact Us.
+* [x] User must be able to go two pages: Menu, and Contact Us.
 * [ ] User can see the address and phone number on the contact us page.
 * [ ] User can see a basic google map on the Contact Us page.
 * [ ] User can navigate to a menu page with four sections:
@@ -58,7 +58,7 @@ The following **known issues**:
 
 Here's a walkthrough of implemented user stories:
 
-![Video Walkthrough](path-to-your-GIF-file)
+![Video Walkthrough](Walkthrough.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -68,7 +68,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name]
+    Copyright [2017] [Ha Ta]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
