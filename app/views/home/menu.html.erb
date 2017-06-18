@@ -1,5 +1,25 @@
-<%= nav_section("nav nav-pills nav-fill") do %>
+<h1>Menu</h1>
+<%= nav_section("nav nav-pills") do %>
   <% @sections.each do |section| %>
     <%= section_link section %>
   <% end %>
+<% end %>
+<br>
+<div class="card">
+  <%= form_tag nil, method: 'get', class: 'card-block form-inline' do %>
+    <div class="form-group">
+      <%= select_tag :sort_column, options_for_select(['name', 'price']), class: 'form-control' %>
+      <%= select_tag :sort_direction, options_for_select(['asc', 'desc']), class: 'form-control' %>
+      <%= submit_tag 'Sort', class: 'btn btn-secondary'%>
+    </div>
+  <% end %>
+</div>
+<% @foodItems.each do |food| %>
+  <div class="card">
+    <%= image_tag food.image_url_or_default, class: "card-img-top", alt: "food.name" %>
+    <div class="card-block">
+      <h4 class="card-title"><%= food.name %></h4>
+      <div class="card-text text-muted"><%= food.price %> VND</div>
+    </div>
+  </div>
 <% end %>

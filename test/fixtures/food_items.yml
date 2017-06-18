@@ -1,0 +1,141 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Pho Bo
+  description: Beef with noodle 
+  price: 55000
+  image_url:
+  section: one
+
+two:
+  name: Pho Ga
+  description: Chicken with noodle 
+  price: 55000
+  image_url:
+  section: one
+
+three:
+  name: Hu Tieu
+  description: Pig with noodle 
+  price: 50000
+  image_url:
+  section: one
+
+four:
+  name: Banh Canh Cua
+  description: Pig with rice noodle 
+  price: 50000
+  image_url:
+  section: one
+
+five:
+  name: Bun Cha Ca
+  description: Fish with rice noodle 
+  price: 50000
+  image_url: ""
+  section: one
+
+six:
+  name: Canh Chua
+  description: Delicious fish soup 
+  price: 55000
+  image_url: http://anh.24h.com.vn/upload/2-2016/images/2016-06-14/1465876763-cac-mon-canh-chua-ngon-cho-ngay-he-canh-chua-1465808149-width500height417.jpg
+  section: two
+
+seven:
+  name: Ca Kho To
+  description: Fish with sauce
+  price: 60000
+  image_url: http://vaobepnauan.com/wp-content/uploads/2014/07/ca-kho-to-kieu-mien-nam-1.jpg
+  section: two
+
+eight:
+  name: Suon Ram Man
+  description: Pig with sauce
+  price: 60000
+  image_url: 
+  section: two
+
+nine:
+  name: Thit Kho Trung
+  description: Pig with egg and sauce
+  price: 60000
+  image_url: 
+  section: two
+
+ten:
+  name: Ca Chien
+  description: Fried fish
+  price: 60000
+  image_url: 
+  section: two
+
+eleven:
+  name: Khoai Tay Chien
+  description: Fried potatoes
+  price: 45000
+  image_url: 
+  section: three
+
+twelve:
+  name: Ga Ran
+  description: Fried chicken
+  price: 55000
+  image_url: 
+  section: three
+
+thirteen:
+  name: Trung Chien
+  description: Fried egg
+  price: 45000
+  image_url: 
+  section: three
+
+fourteen:
+  name: Com Chien Duong Chau
+  description: Fried rice with sauce
+  price: 60000
+  image_url: 
+  section: three
+
+fifthteen:
+  name: Bot Chien
+  description: Fried rice with egg
+  price: 45000
+  image_url: 
+  section: three
+
+sixteen:
+  name: Ca Phe Da
+  description: Coffee with ice
+  price: 45000
+  image_url: 
+  section: four
+
+seventeen:
+  name: Ca Phe Sua
+  description: Coffee with milk
+  price: 50000
+  image_url: 
+  section: four
+
+eighteen:
+  name: Capuchino
+  description: Capuchino coffee
+  price: 55000
+  image_url: 
+  section: four
+
+nineteen:
+  name: Latte
+  description: Latte coffee
+  price: 55000
+  image_url: 
+  section: four
+
+twenty:
+  name: Margarita
+  description: Margarita coctail
+  price: 60000
+  image_url: 
+  section: four

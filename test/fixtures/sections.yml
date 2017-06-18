@@ -1,7 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
+  name: Breakfast
 
 two:
-  name: MyString
+  name: Lunch
+
+three:
+  name: Dinner
+
+four:
+  name: Drinks
