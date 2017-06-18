@@ -8,8 +8,9 @@
 <div class="card">
   <%= form_tag nil, method: 'get', class: 'card-block form-inline' do %>
     <div class="form-group">
-      <%= select_tag :sort_column, options_for_select(['name', 'price']), class: 'form-control' %>
-      <%= select_tag :sort_direction, options_for_select(['asc', 'desc']), class: 'form-control' %>
+      <%= hidden_field_tag :section, params[:section] %>
+      <%= select_tag :sort_column, options_for_select(['name', 'price'], params[:sort_column]), class: 'form-control' %>
+      <%= select_tag :sort_direction, options_for_select(['asc', 'desc'], params[:sort_direction]), class: 'form-control' %>
       <%= submit_tag 'Sort', class: 'btn btn-secondary'%>
     </div>
   <% end %>
@@ -18,8 +19,8 @@
   <div class="card">
     <%= image_tag food.image_url_or_default, class: "card-img-top", alt: "food.name" %>
     <div class="card-block">
-      <h4 class="card-title"><%= food.name %></h4>
-      <div class="card-text text-muted"><%= food.price %> VND</div>
+      <h4 class="card-title"><%= food.name %> <span class="badge badge-pill badge-danger"><%= food.price %> VND</span></h4>
+      <div class="card-text"><span class="badge badge-info"><%= food.section.name %></span></div>
     </div>
   </div>
 <% end %>
