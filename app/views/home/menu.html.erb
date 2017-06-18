@@ -1,2 +1,5 @@
-<h1>Home#menu</h1>
-<p>Find me in app/views/home/menu.html.erb</p>
+<%= nav_section("nav nav-pills nav-fill") do %>
+  <% @sections.each do |section| %>
+    <%= section_link section %>
+  <% end %>
+<% end %>

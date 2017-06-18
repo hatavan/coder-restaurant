@@ -1,7 +1,7 @@
 module ApplicationHelper
   def nav_bar
     content_tag(:ul, class: "navbar-nav mr-auto") do
-        yield
+      yield
     end
   end
 
